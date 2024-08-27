@@ -6,3 +6,42 @@ html, body {
 :root {
     --bg-word: #5134ff;
 }
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1:after {
+    content: "";
+    animation: 6s swap infinite;
+    background: var(--bg-word);
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    margin-left: 4px;
+}
+
+@keyframes swap {
+    0% {
+        content: "Lego";
+    }
+
+    25% {
+        content: "coding";
+    }
+
+    50% {
+        content: "dogs";
+    }
+
+    75% {
+        content: "Minecraft";
+    }
+
+    100% {
+        content: "Lego";
+    }
+}
